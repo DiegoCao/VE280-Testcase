@@ -21,21 +21,20 @@ int main() {
         la.insertBack(5);
         la.insertBack(4);
         la.insertBack(1);
-        la.insertBack(0); // a = 0145
 
         lb.insertBack(5);
-        lb.insertBack(4);
+        lb.insertBack(3);
         lb.insertBack(1);
-        lb.insertBack(0);
-        lb.insertBack(0);
-        lb.insertBack(0);
-
-
+        lb.print();
+        lb.removeFront();
+        lb.removeFront();
+        lb.removeFront();
+        lb.print();
+        la=Add(la,lb);
+        la.print();
         //to determine 0:
-        lb.removeFront(); // b = 314
-
         std::cout << isLarger(la, lb) << '\n';
-
+        
         List<int> ab_sum(la);
         ab_sum.print();
         ab_sum = Add(la, lb);

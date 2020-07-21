@@ -29,7 +29,18 @@ int main() {
         //to determine 0:
 
         std::cout << isLarger(la, lb) << '\n';
-
+        la.insertBack(3);
+        la.insertBack(4);
+        std::cout << isLarger(la, lb) << '\n';
+        List<int> lc(lb);
+        lc.print();
+        lc.removeFront();
+        lc.removeFront();
+        lc.removeFront();
+        lc.removeFront();
+        lc.removeFront();
+    
+    
 
 
     }

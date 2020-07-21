@@ -16,14 +16,16 @@ int main() {
         List<int> la, lb;
         la.insertBack(5);
         la.insertBack(4);
-        la.insertBack(1);
-        la.insertBack(0); // a = 0145
+        la.insertBack(1); // a = 0145
 
         lb.insertBack(2);
         lb.insertBack(4);
         lb.insertBack(1);
         lb.insertBack(3);
+        
 
+        la.print();
+        lb.print();
         //to determine 0:
         lb.removeFront(); // b = 314
 
@@ -33,6 +35,10 @@ int main() {
         ab_sum.print();
         ab_sum = Add(la, lb);
         ab_sum.print();
+        lb.removeFront();
+        la.removeFront();
+        la.print();
+        lb.print();
 
     }
     catch(emptyList){
